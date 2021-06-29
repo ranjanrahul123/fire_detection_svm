@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+
+    <title> Detection System </title>
+    <link href="css/cares.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <a class="navbar-brand" href="#">Fire Detection</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+                  </li>
+                </ul>
+            
+        
+
+        <form method="post" action ="{{ url_for('signup') }}" class="form-inline mt-2 mt-md-0">
+            <div class="dropdown">
+              <button class="btn btn-outline-primary my-2 my-sm-0" type="submit" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                SIGN-UP/LOGIN
+              </button>
+            </div>
+        </form>
+       
+        </div>
+        </nav>
+
+    </header>
+    <br><br>
+    <center>
+    <div class ="abcd">
+      <br>
+      
+      <img src="https://t4.ftcdn.net/jpg/03/61/52/11/360_F_361521131_tvclR3GrsVQBFVsUe1EPNFgH2MWIN1w7.jpg" >
+    </div>
+  </center>
+
+    <!-- Marketing messaging and featurettes
+  ================================================== -->
+  <!-- Wrap the rest of the page in another container to center all the content. -->
+
+  <div class="container marketing">
+
+    <!-- Three columns of text below the carousel -->
+    <div class="row">
+      <div class="col-lg-4">
+        <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="https://www.w3schools.com/images/w3schools_green.jpg">
+        <h2>Fire Image </h2>
+        <p>We are predicting an image whether image contains fire or not using svm algorithm.
+        </p>
+       
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="fire_dataset/non_fire_images/non_fire.1.png">
+        <h2>Non-Fire Image</h2>
+        <p>We are predicting an image whether image contains fire or not using svm algorithm.</p>
+        
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="fire_dataset/non_fire_images/non_fire.1.png">
+        <h2>SVM Algo</h2>
+        <p>We are predicting an image whether image contains fire or not using svm algorithm.
+        </p>
+      </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+
+    
+
+
+
+
+</body>
+</html>

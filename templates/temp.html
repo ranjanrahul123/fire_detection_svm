@@ -1,0 +1,69 @@
+<html>
+<head>
+<title>Python Flask Upload and display image</title>
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />      -->
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script> --> 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<link href="css/cares.css" rel="stylesheet">
+</head>
+<body>
+<header>
+
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" href="#">Fire Detection</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                
+                {% if enter == True %}
+                <a class="nav-link" href="/"> Logout<span class="sr-only">(current)</span></a>
+                {% else %}
+                <a class="nav-link" href="#"> Home<span class="sr-only">(current)</span></a>
+                {% endif %}
+              </li>
+            </ul>
+        </div>
+        <div>
+            <p style="color:red;"> Welcome {{user}}</p>
+            
+        </div>    
+
+
+
+</header>
+<br><br>
+<div>
+<p><h1 align="center">Python Flask Upload and display image</h1></p>
+ <div class="container">
+<div class="row">
+    <h2>Select a file to upload</h2>
+    <br> &nbsp; &nbsp;
+        
+    </div> 
+    
+    <form method="POST" action="{{ url_for('file_upload') }}" enctype="multipart/form-data">
+        <dl>
+            <p>
+                <input type="file" name="file" class="form-control" autocomplete="off" required>
+            </p>
+        </dl>
+        <p>
+            <input type="submit" value="Submit" class="btn btn-info">
+        </p>
+    </form>
+
+    <!-- Web camera  --> 
+     <hr>
+    
+
+    <!-- taking pictures from webcam --> 
+
+
+ </div>
+</div> 
+</div>
+</body>
+</html>
